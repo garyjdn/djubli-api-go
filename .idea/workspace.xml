@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba3cf69-626e-4bea-adf1-01aa7f663928" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/djubli-api-go.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/application.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/url_mappings.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/transactions/transactions_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datasources/mysql/transaction_db/transaction_db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/transactions/transaction_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/transactions/transaction_dto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/transactions/user_marshaller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/transactions_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/date_utils/date_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/errors/rest_error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/mysql_utils/mysql_utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +49,27 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="djubli-api-go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <envs>
+        <env name="mysql_transactions_username" value="root" />
+        <env name="mysql_transactions_password" value="" />
+        <env name="mysql_transactions_host" value="127.0.0.1:3306" />
+        <env name="mysql_transactions_schema" value="djubli" />
+      </envs>
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/garyjdn/djubli-api-go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,5 +95,9 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
 </project>
